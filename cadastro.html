@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="styleCadastro.css">
+    <title>Cadastrar</title>
+</head>
+<body onload="banco()">
+    <div>
+        <header>
+            <div class="header1">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre a empresa</a>
+            </div>
+        </header>
+
+        <h2>Monstros SA uma empresa de qualidade</h2>
+        <h2>Preenche o formulário e envie seus dados!</h2>
+
+        <div class="mainCadastro">
+            <div class="main11">
+                <label>Nome completo:</label><br>
+                <input type="text" id="nome" placeholder="Coloque seu nome completo">
+                <label>E-mail:</label><br>
+                <input type="text" id="email" placeholder="Insira o seu e-mail"><br>
+
+                <main class="cadastroMain" style="display: flex; flex-direction: row;"> 
+                <main class="cadastro">
+                    <label>Login:</label>
+                    <input type="text" id="login" placeholder="Coloque o login">
+                </main>
+                <main class="cadastro2">
+                    <label>Senha:</label>
+                    <input type="password" id="senha" placeholder="Insira sua senha"><br>
+                </main>
+                </main>
+
+         
+                <label>Buscar por nome ou login:</label><br>
+                <input type="text" id="buscar" placeholder="Digite nome ou login para buscar"><br>
+
+                <main class="botao">
+                    <button type="button" onclick="adicionar()">Enviar</button>
+                    <a href="login.html"><button type="button">Já cadastrado</button></a>
+                    <button type="button" onclick="buscar()">Buscar</button>
+                    <button type="button" onclick="atualizar()">Atualizar</button>
+                    <button type="button" onclick="apagar()">Apagar</button>
+                </main>
+            </div>
+            
+            <div class="main2">
+                <img src="img/sobre.jpg" alt="" style="width: 400px; height: 300px; box-shadow: 10px 0 20px black">
+                <img src="img/logo.png" style="width: 450px; height: 140px;">
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <img src="img/porta2.png">
+        <p>""""""" ..</p>
+        <p>Desenvolvido por Monstros SA.</p>
+    </footer>
+</body>
+</html>
